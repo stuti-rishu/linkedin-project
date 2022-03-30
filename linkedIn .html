@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn </title>
+    <link rel="stylesheet" href="L style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <div class="leftheader">
+            <img
+                src="data:image/png;base64,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" />
+            <div class="search">
+                <i class="material-icons">
+                    search
+                </i>
+                <input type="text" placeholder="search" />
+            </div>
+
+
+
+
+        </div>
+        <div class="rightheader">
+            <div class="headeroption">
+                <i class="material-icons headeroption-icon">
+                    home
+                </i>
+                <h3>Home</h3>
+            </div>
+            <div class="headeroption">
+                <i class="material-icons headeroption-icon">
+                    people
+                </i>
+                <h3>My networks</h3>
+            </div>
+            <div class="headeroption">
+                <i class="material-icons headeroption-icon">
+                    work
+                </i>
+                <h3>Jobs</h3>
+            </div>
+            <div class="headeroption">
+                <i class="material-icons headeroption-icon">
+                    home
+                </i>
+                <h3>Home</h3>
+            </div>
+            <div class="headeroption">
+                <i class="material-icons headeroption-icon">
+                    sms
+                </i>
+                <h3>Messaging</h3>
+            </div>
+            <div class="headeroption">
+                <i class="material-icons headeroption-icon">
+                    notifications
+                </i>
+                <h3>notification</h3>
+            </div>
+            <div class="headeroption">
+                <i class="material-icons headeroption-icon">
+                    account_circle
+                </i>
+                <h3>Me</h3>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="body-main">
+        <div class="sidebar">
+            <div class="sidebar-top">
+                <img
+                    src="data:image/jpeg;base64,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" />
+                <i class="material-icons sidebar-topavatar">
+                    account_circle
+                </i>
+                <h2>Swarnlata Jaiswal</h2>
+                <h4>Fullstack Development Trainee at Skill Academy</h4>
+            </div>
+            <div class="sidebar-stats">
+
+
+                <div class="sidebar-stat">
+                    <p>Who Viewed You</p>
+                    <p class="sidebar-statnumber">30</p>
+                </div>
+                <div class="sidebar-stat">
+                    <p>Views on post</p>
+                    <p class="sidebar-statnumber">40</p>
+                </div>
+            </div>
+            <div class="sidebar-bottom">
+                <p>Recent</p>
+                <div class="sidebar-recentitems">
+                    <span class="sidebar-hash">#</span>
+                    <p>Tensor flow</p>
+                </div>
+                <div class="sidebar-recentitems">
+                    <span class="sidebar-hash">#</span>
+                    <p>Tensor flow</p>
+                </div>
+            </div>
+        </div>
+        <div class="feed">
+            <div class="feed-inputcontainer">
+                <i class="material-icons">
+                    account_circle
+                </i>
+                <div class="feed-input">
+
+                    <form>
+                        <input type="text" placeholder="start a post">
+                    </form>
+                </div>
+            </div>
+            <div class="feed-inputoption">
+                <div class="inputoption">
+                    <i style="color: dodgerblue;" class="material-icons">
+                        photo
+                    </i>
+                    <h4>Photo</h4>
+                </div>
+                <div class="inputoption">
+                    <i style="color:lightgreen ;" class="material-icons">
+                        smart_display
+                    </i>
+                    <h4>Video</h4>
+                </div>
+                <div class="inputoption">
+                    <i style="color:orange ;" class="material-icons">
+                        event
+                    </i>
+                    <h4>Event</h4>
+
+                </div>
+                <div class="inputoption">
+                    <i style="color:rgb(236, 60, 128) ;" class="material-icons">
+                        newspaper
+                    </i>
+                    <h4>Write article</h4>
+                </div>
+            </div>
+           
+       
+
+            <div class="post">
+                <div class="post-header">
+                    <div class="post-info">
+                        <h4>Meeso</h4>
+
+                    </div>
+                </div>
+                <div class="post-body">
+                    <a target="#" href="https://meesho.com/"><img
+                            src="https://images.meesho.com/images/products/70112598/dk0ap_512.jpg" height="400"
+                            width="600" /></a>
+                </div>
+                <div class="feed-inputoption">
+                    <div class="inputoption">
+                        <i style="color:gray" class="material-icons">thumb_up</i>
+                        <h4>Like</h4>
+                    </div>
+                    <div class="inputoption">
+                        <i style="color:gray" class="material-icons">comment</i>
+                        <h4>Comment</h4>
+                    </div>
+                    <div class="inputoption">
+                        <i style="color:gray" class="material-icons">share</i>
+                        <h4>Share</h4>
+                    </div>
+                    <div class="inputoption">
+                        <i style="color:gray" class="material-icons">send</i>
+                        <h4>Send</h4>
+                    </div>
+                </div>
+            
+            </div>
+        
+        </div>
+        <div class="widgets">
+            <div class="widgets-header">
+                linkedIn News
+            </div>
+            <div class="widgets-article">
+              
+              jobs pay in it soar
+                
+            
+            
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
